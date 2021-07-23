@@ -55,7 +55,7 @@ function App() {
         </Route>
 
         <Route path="/produtos">
-          {/* <ProductList></ProductList> */}
+          <ProductList></ProductList>
         </Route>
 
         <Route path="/">

@@ -23,6 +23,10 @@ h2 {
     font-size: 1em;
 }
 
+.add-button:hover {
+    opacity: 0.9;
+}
+
 .div-table {
     margin: 0 30px;
 }
