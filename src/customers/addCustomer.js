@@ -54,6 +54,7 @@ class CustomerAdd extends React.Component {
                     <label>Endereço</label>
                     <input value={this.state.place} onChange={this.inputChange} name="place" type="text" placeholder="Endereço" autocomplete required/>
                     <button className="cadastrar-btn"type="submit">Cadastrar</button>
+                    <button className="voltar-btn"><a href="/clientes"> Voltar </a> </button>
                 </form>
             </div>
         );

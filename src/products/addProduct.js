@@ -39,14 +39,15 @@ class ProductAdd extends React.Component {
                 <h2>Cadastrar Produto</h2>
                 <form className="form-cadastro" onSubmit={this.save}>
                     <label>Nome do produto</label>
-                    <input value={this.state.name} onChange={this.inputChange} name="name" type="text" placeholder="Nome do Produto" autocomplete required/>
+                    <input value={this.state.name} onChange={this.inputChange} name="name" type="text" placeholder="Nome" autocomplete required/>
                     <label>Descrição</label>
-                    <input value={this.state.description} onChange={this.inputChange} name="description" type="text" placeholder="Descrição do Produto" autocomplete required/>
+                    <input value={this.state.description} onChange={this.inputChange} name="description" type="text" placeholder="Descrição" autocomplete required/>
                     <label>Preço</label>
-                    <input value={this.state.price} onChange={this.inputChange} name="price" type="text" placeholder="Preço do Produto" autocomplete required/>
+                    <input value={this.state.price} onChange={this.inputChange} name="price" type="text" placeholder="Preço" autocomplete required/>
                     <label>Quantidade em estoque</label>
-                    <input value={this.state.stock} onChange={this.inputChange} name="stock" type="text" placeholder="Quantidade Estoque" pattern="\d*" minlength="1" maxlength="9" autocomplete required/>
+                    <input value={this.state.stock} onChange={this.inputChange} name="stock" type="text" placeholder="Quantidade" pattern="\d*" minlength="1" maxlength="9" autocomplete required/>
                     <button className="cadastrar-btn" type="submit">Cadastrar Produto</button>
+                    <button className="voltar-btn"><a href="/produtos"> Voltar </a> </button>
                 </form>
             </div>
         );

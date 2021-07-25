@@ -43,3 +43,20 @@ label {
 .cadastrar-btn:hover {
     opacity: 0.9;
 }
+
+.voltar-btn {
+    border: 1px solid #586760;
+    background-color: #6b8c84;
+    padding: 8px 15px;
+    border-radius: 18px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.voltar-btn a {
+    text-decoration: none;
+    color: #fff;
+}
