@@ -29,6 +29,7 @@ h2 {
 
 .div-table {
     margin: 0 30px;
+    width: 100%;
 }
 
 #customer-table {
@@ -43,6 +44,7 @@ table, th, td {
     border-collapse: separate;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
 
@@ -58,4 +60,62 @@ th {
 
 tr:hover {
     background-color: #ddd;
+}
+
+
+@media screen and (max-width: 700px) and (min-width: 320px) {
+    
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+        font-size: 0.9em;
+	}
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+    tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+        text-align: right;
+
+	}
+
+    td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+        text-align: left;
+        vertical-align: center;
+	}
+
+    /*	Label the data	*/
+	td:nth-of-type(1):before { content: "Nome Completo"; }
+	td:nth-of-type(2):before { content: "CPF"; }
+	td:nth-of-type(3):before { content: "E-mail"; }
+	td:nth-of-type(4):before { content: "Telefone"; }
+	td:nth-of-type(5):before { content: "Endereço"; }
+
+    /*	Make the data align left	*/
+    td:nth-of-type(1) { text-align: center; border: 1px solid red;}
+    td:nth-of-type(2) { text-align: center; }
+    td:nth-of-type(3) { text-align: center; }
+    td:nth-of-type(4) { text-align: center; }
+    td:nth-of-type(5) { text-align: center; }
+
+
+
 }

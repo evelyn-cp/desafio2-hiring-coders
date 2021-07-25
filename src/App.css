@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
 
 .App {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -73,22 +73,24 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 30px 30px 30px;
-  font-family: 'Montserrat', sans-serif;
+  padding: 30px 30px 30px 30px;
   text-align: center;
   background-color: #586760;
   color: #fff;
 }
 
 h2 {
-  margin-top: 0;
+  margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 2.3em;
+  font-size: 3em;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .texto-principal p {
   line-height: 2em;
+  font-size: 1.3em;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .img-principal img {
@@ -110,19 +112,9 @@ h2 {
 
 @media screen and (max-width: 700px) and (min-width: 320px) {
 
-  body {
-    width: 100%;
-    margin: 0;
-  }
-
-  #root {
-    width: 100%;
-    margin: 0;
-  }
 
   nav {
     width: 100%;
-    border: 1px solid red;
     text-align: center;
   }
 
@@ -133,7 +125,6 @@ h2 {
     align-items: center;
     padding: 0;
     margin: 0;
-    width: 100%;
   }
   
   .logo h1 {
@@ -143,21 +134,23 @@ h2 {
   
 
   .menu {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    margin: 0 20px;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px  solid #586760;
   }
 
   .menu ul {
-    display: flex;
-    flex-direction: row;
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
 
   .menu li {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    margin: 0 10px;
     text-decoration: none;
     border: 1px solid #586760;
     background-color: #6b8c84;
@@ -168,6 +161,44 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
   }
+
+  .container {
+    text-align: center;
+    width: auto;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  .texto-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 30px 30px 30px;
+    text-align: center;
+    background-color: #586760;
+    color: #fff;
+  }
+
+  .texto-principal p {
+    line-height: 2em;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .img-principal img {
+    text-align: center;
+    width: 260px;
+    padding: 3%;
+    margin: 30px 0;
+  }
+
 
 
 }

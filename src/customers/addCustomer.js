@@ -40,14 +40,19 @@ class CustomerAdd extends React.Component {
     render () {
         return (
             
-            <div>
+            <div className="div-cadastro">
                 <h2>Cadastrar Cliente</h2>
                 <form className="form-cadastro" onSubmit={this.save}>
-                    <input value={this.state.name} onChange={this.inputChange} name="name" type="text" placeholder="Nome Completo" autocomplete />
-                    <input value={this.state.cpf} onChange={this.inputChange} name="cpf" type="text" placeholder="CPF" autocomplete />
-                    <input value={this.state.email} onChange={this.inputChange} name="email" type="email" placeholder="E-mail" autocomplete />
-                    <input value={this.state.phone} onChange={this.inputChange} name="phone" type="text" placeholder="Telefone" autocomplete />
-                    <input value={this.state.place} onChange={this.inputChange} name="place" type="text" placeholder="Endereço" autocomplete />
+                    <label>Nome completo</label>
+                    <input value={this.state.name} onChange={this.inputChange} name="name" type="text" placeholder="Nome" autocomplete required/>
+                    <label>CPF (somente números)</label>
+                    <input value={this.state.cpf} onChange={this.inputChange} name="cpf" type="text" placeholder="CPF" pattern="\d*" minlength="11" maxlength="11" autocomplete required/>
+                    <label>E-mail</label>
+                    <input value={this.state.email} onChange={this.inputChange} name="email" type="email" placeholder="E-mail" autocomplete required/>
+                    <label>Telefone (somente números)</label>
+                    <input value={this.state.phone} onChange={this.inputChange} name="phone" type="text" placeholder="Telefone" pattern="\d*" minlength="11" maxlength="11" autocomplete required />
+                    <label>Endereço</label>
+                    <input value={this.state.place} onChange={this.inputChange} name="place" type="text" placeholder="Endereço" autocomplete required/>
                     <button className="cadastrar-btn"type="submit">Cadastrar</button>
                 </form>
             </div>

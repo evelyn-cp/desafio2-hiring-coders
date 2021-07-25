@@ -37,6 +37,10 @@ function App() {
         </div>
       </nav>
 
+      <footer>
+        
+      </footer>
+
 
 
 
