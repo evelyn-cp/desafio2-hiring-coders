@@ -76,8 +76,8 @@ function App() {
         <div className="footer">
             <div className="texto-footer"><p>Desenvolvido por <b>Evelyn Pereira</b></p></div>
             <div className="img-footer">
-            <a href="https://github.com/evelyn-cp" target="_blank"><img src={LogoGit} alt="Github" width="20px"/></a>
-            <a href="https://www.linkedin.com/in/evelyncper/" target="_blank"><img src={LogoLinkedin} alt="LinkedIn" width="20px"/></a>
+            <a href="https://github.com/evelyn-cp" target="_blank" rel="noreferrer"><img src={LogoGit} alt="Github" width="20px"/></a>
+            <a href="https://www.linkedin.com/in/evelyncper/" target="_blank" rel="noreferrer"><img src={LogoLinkedin} alt="LinkedIn" width="20px"/></a>
             </div>
           </div>
       </footer>
