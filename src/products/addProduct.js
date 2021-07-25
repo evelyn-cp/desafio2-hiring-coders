@@ -1,5 +1,5 @@
 import '../products/addProducts.css';
-import React, { useState } from "react";
+import React from "react";
 import { withRouter } from "react-router-dom";
 
 class ProductAdd extends React.Component {
