@@ -4,6 +4,8 @@ import CustomerList from './customers/listCustomer';
 import ProductAdd from './products/addProduct';
 import ProductList from './products/listProducts';
 import Imagem2 from './images/img2.svg';
+import LogoGit from './images/github.svg'
+import LogoLinkedin from './images/linkedin.svg'
 
 import {
   BrowserRouter as Router,
@@ -37,12 +39,6 @@ function App() {
         </div>
       </nav>
 
-      <footer>
-        
-      </footer>
-
-
-
 
       <Switch>
 
@@ -75,6 +71,16 @@ function App() {
         </div>
       
       </main>
+
+      <footer>
+        <div className="footer">
+            <div className="texto-footer"><p>Desenvolvido por <b>Evelyn Pereira</b></p></div>
+            <div className="img-footer">
+            <a href="https://github.com/evelyn-cp" target="_blank"><img src={LogoGit} alt="Github" width="20px"/></a>
+            <a href="https://www.linkedin.com/in/evelyncper/" target="_blank"><img src={LogoLinkedin} alt="LinkedIn" width="20px"/></a>
+            </div>
+          </div>
+      </footer>
         </Route>
 
       </Switch>
