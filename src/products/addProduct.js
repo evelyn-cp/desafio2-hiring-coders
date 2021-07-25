@@ -1,4 +1,5 @@
 import '../products/addProducts.css';
+import {Link} from "react-router-dom";
 import React from "react";
 import { withRouter } from "react-router-dom";
 
@@ -47,7 +48,7 @@ class ProductAdd extends React.Component {
                     <label>Quantidade em estoque</label>
                     <input value={this.state.stock} onChange={this.inputChange} name="stock" type="text" placeholder="Quantidade" pattern="\d*" minlength="1" maxlength="9" autocomplete required/>
                     <button className="cadastrar-btn" type="submit">Cadastrar Produto</button>
-                    <button className="voltar-btn"><a href="/produtos"> Voltar </a> </button>
+                    <Link to="/produtos"> <button className="voltar-btn">Voltar</button> </Link>
                 </form>
             </div>
         );

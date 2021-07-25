@@ -70,12 +70,14 @@ tr:hover {
     cursor: pointer;
     font-size: 1em;
     margin-top: 10px;
-}
-
-.voltar-btn a {
     text-decoration: none;
     color: #fff;
 }
+
+.voltar-btn:hover {
+    opacity: 0.9;
+}
+
 
 
 

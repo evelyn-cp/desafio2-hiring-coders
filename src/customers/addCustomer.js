@@ -1,5 +1,5 @@
 import '../customers/addCustomer.css';
-
+import {Link} from "react-router-dom";
 import React from "react";
 import { withRouter } from "react-router-dom";
 
@@ -53,8 +53,8 @@ class CustomerAdd extends React.Component {
                     <input value={this.state.phone} onChange={this.inputChange} name="phone" type="text" placeholder="Telefone" pattern="\d*" minlength="11" maxlength="11" autocomplete required />
                     <label>Endereço</label>
                     <input value={this.state.place} onChange={this.inputChange} name="place" type="text" placeholder="Endereço" autocomplete required/>
-                    <button className="cadastrar-btn"type="submit">Cadastrar</button>
-                    <button className="voltar-btn"><a href="/clientes"> Voltar </a> </button>
+                    <button className="cadastrar-btn" type="submit">Cadastrar</button>
+                    <Link to="/clientes"> <button className="voltar-btn">Voltar</button> </Link>
                 </form>
             </div>
         );
