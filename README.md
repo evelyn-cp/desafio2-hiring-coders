@@ -1,3 +1,35 @@
+# Sistema de Gestão de Cadastro
+
+Projeto desenvolvido para o Desafio #2 do programa Hiring Coders:
+Criação de um Sistema de Gestão de Cadastro de produtos e de clientes.
+
+Visite o projeto: https://natury-cadastro.netlify.app/
+
+## Funcionalidades da programação
+
+- Na construção do sistema, foi utilizado React Router para rotear a paginação da aplicação.
+
+- O sistema possui 4 páginas de funcionalidades: 
+    - Listagem de Clientes
+    - Cadastro de Clientes
+    - Listagem de Produtos
+    - Cadastro de Produtos
+
+- Os dados cadastrados ficam salvos no localStorage.
+
+
+## Tecnologias utilizadas 
+
+- HTML
+- CSS
+- JavaScript (React.js)
+
+---
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
