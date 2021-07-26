@@ -24,8 +24,8 @@ Visite o projeto: https://natury-cadastro.netlify.app/
 - CSS
 - JavaScript (React.js)
 
-
-
+<br>
+<br>
 ---
 
 
