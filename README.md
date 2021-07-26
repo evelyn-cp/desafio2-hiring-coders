@@ -1,6 +1,6 @@
 # Sistema de Gestão de Cadastro
 
-Projeto desenvolvido para o Desafio #2 do programa Hiring Coders:
+Projeto desenvolvido para o Desafio #2 do programa Hiring Coders: <br>
 Criação de um Sistema de Gestão de Cadastro de produtos e de clientes.
 
 Visite o projeto: https://natury-cadastro.netlify.app/
